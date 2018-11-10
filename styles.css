@@ -10,7 +10,7 @@
 	height: 600px;
 }
 
-.container .box {
+.container .cell {
 	float: left;
 	background-color: #7F7FFF;
 	border-radius: 20px;
@@ -22,11 +22,16 @@
 	font-size: 200px;
 	font-family: sans-serif;
 	cursor: pointer;
+	overflow: hidden;
+    transition-duration: 4s;
+    transition-property: transform;
 }
 
-.container .box:hover {
+.container .cell:hover {
 	background: #98FB98;
 	font-weight: bold;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 button {
